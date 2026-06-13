@@ -1,0 +1,6 @@
+{
+  "name": "Sam's Painting",
+  "description": "Premium painting and fine finishes interactive catalog, color planner, and estimation workspace.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
