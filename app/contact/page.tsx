@@ -1,14 +1,15 @@
 import type { Metadata } from "next";
-import { Clock, Mail, MapPin, Phone, Shield } from "lucide-react";
+import { Mail, Phone, Shield } from "lucide-react";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
+import { PageHero } from "@/components/page-hero";
 import { ContactForm } from "@/components/contact-form";
-import { contactInfo, serviceAreaTowns } from "@/lib/contact";
+import { contactInfo } from "@/lib/contact";
 
 export const metadata: Metadata = {
-  title: "Contact Sam's Painting | Free Estimates in North Jersey",
+  title: "Contact Sam's Painting | Free Estimates in New Jersey",
   description:
-    "Call (201) 232-5978 or send a message for a free painting estimate. Serving Wayne and North Jersey.",
+    "Call (201) 232-5978 or send a message for a free painting estimate. Serving homeowners and small businesses across New Jersey.",
 };
 
 export default function ContactPage() {
@@ -17,20 +18,17 @@ export default function ContactPage() {
       <SiteHeader />
 
       <main className="flex-1">
-        <section className="py-14 sm:py-20 bg-neutral-100/30 border-b border-neutral-200">
-          <div className="max-w-7xl mx-auto px-4 sm:px-8 text-center space-y-3">
-            <h1 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-neutral-900">
-              Contact Us
-            </h1>
-            <p className="text-sm max-w-xl mx-auto text-neutral-600 leading-relaxed">
-              Call for a free estimate or send a quick message. We serve homeowners and small businesses across North Jersey.
-            </p>
-          </div>
-        </section>
+        <PageHero
+          imageSrc="/banner.jpg"
+          imageAlt="Contact Sam's Painting"
+          badge="Free Estimates · Fast Response"
+          headline="Contact Us"
+          tagline="Call, email, or send a message. We answer questions, schedule free estimates, and serve homeowners and small businesses across New Jersey."
+        />
 
         <section className="py-16 sm:py-24">
           <div className="max-w-7xl mx-auto px-4 sm:px-8">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-12 items-start">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-12 lg:items-stretch">
               <div className="space-y-8">
                 <div className="space-y-3">
                   <h2 className="text-2xl sm:text-3xl font-extrabold tracking-tight text-neutral-900">
@@ -82,34 +80,6 @@ export default function ContactPage() {
 
                   <li className="flex items-start gap-4">
                     <span className="p-2.5 rounded-xl bg-accent-50 border border-accent-100 text-accent-500 shrink-0">
-                      <MapPin size={18} className="stroke-[2.5]" />
-                    </span>
-                    <span>
-                      <span className="block text-xs font-bold uppercase tracking-wider text-neutral-500 mb-0.5">
-                        Service Area
-                      </span>
-                      <span className="text-base font-bold text-neutral-900">
-                        {contactInfo.location}
-                      </span>
-                    </span>
-                  </li>
-
-                  <li className="flex items-start gap-4">
-                    <span className="p-2.5 rounded-xl bg-accent-50 border border-accent-100 text-accent-500 shrink-0">
-                      <Clock size={18} className="stroke-[2.5]" />
-                    </span>
-                    <span>
-                      <span className="block text-xs font-bold uppercase tracking-wider text-neutral-500 mb-0.5">
-                        Hours
-                      </span>
-                      <span className="text-base font-bold text-neutral-900">
-                        {contactInfo.hours}
-                      </span>
-                    </span>
-                  </li>
-
-                  <li className="flex items-start gap-4">
-                    <span className="p-2.5 rounded-xl bg-accent-50 border border-accent-100 text-accent-500 shrink-0">
                       <Shield size={18} className="stroke-[2.5]" />
                     </span>
                     <span>
@@ -122,21 +92,12 @@ export default function ContactPage() {
                     </span>
                   </li>
                 </ul>
-
-                <div>
-                  <p className="text-xs font-bold uppercase tracking-wider text-neutral-500 mb-3">
-                    Towns We Serve
-                  </p>
-                  <p className="text-sm text-neutral-600 leading-relaxed">
-                    {serviceAreaTowns.join(" • ")} and surrounding North Jersey communities.
-                  </p>
-                </div>
               </div>
 
-              <div className="rounded-2xl overflow-hidden border border-neutral-200 shadow-md bg-white h-[320px] sm:h-[420px] lg:h-full lg:min-h-[480px]">
+              <div className="rounded-2xl overflow-hidden border border-neutral-200 shadow-md bg-white h-[280px] sm:h-[320px] lg:h-full min-h-[280px]">
                 <iframe
-                  title="Sam's Painting service area map"
-                  src="https://www.google.com/maps?q=Wayne,+NJ+07470&z=9&output=embed"
+                  title="Sam's Painting New Jersey service area map"
+                  src="https://www.google.com/maps?q=New+Jersey&z=7&output=embed"
                   className="w-full h-full border-0"
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
@@ -146,15 +107,6 @@ export default function ContactPage() {
             </div>
 
             <div className="mt-16 sm:mt-20 max-w-xl mx-auto">
-              <div className="text-center space-y-2 mb-8">
-                <h2 className="text-xl sm:text-2xl font-extrabold tracking-tight text-neutral-900">
-                  Request a Free Estimate
-                </h2>
-                <p className="text-sm text-neutral-600">
-                  Fill out the form below and we&apos;ll get back to you shortly.
-                </p>
-              </div>
-
               <ContactForm />
             </div>
           </div>

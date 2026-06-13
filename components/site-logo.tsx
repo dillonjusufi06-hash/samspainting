@@ -10,9 +10,6 @@ export function SiteLogo({ className = "", dark = false }: { className?: string;
         <span className={`block text-sm sm:text-base font-black tracking-tight ${dark ? "text-white" : "text-neutral-900"}`}>
           Sam&apos;s Painting
         </span>
-        <span className={`block text-[10px] font-bold uppercase tracking-wider ${dark ? "text-accent-300" : "text-accent-600"}`}>
-          New Jersey
-        </span>
       </div>
     </div>
   );
