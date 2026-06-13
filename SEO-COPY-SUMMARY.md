@@ -32,7 +32,7 @@
 
 | Page | URL | Purpose |
 |------|-----|---------|
-| Homepage | `/` | Main landing — hero, services, gallery, testimonials, FAQ, service area |
+| Homepage | `/` | Main landing — hero, services, gallery, testimonials, FAQ |
 | Contact | `/contact` | NAP, map, Fillout form |
 | Interior Painting | `/service/interior-painting` | Service landing |
 | Exterior Painting | `/service/exterior-painting` | Service landing |
@@ -97,11 +97,7 @@ Each service page has a unique meta description and H1 (no `#1 Top Rated` templa
 
 **Gallery H2:** Our Past Painting Work
 
-**Gallery intro:** Take a look at real painting projects completed by Sam's Painting across North Jersey.
-
-**Service Area section:** Bergen, Morris, Essex counties + towns (Franklin Lakes, Saddle River, Alpine, Ridgewood, Summit, Short Hills, etc.)
-
-**Testimonials H2:** What Our Clients Say
+**Gallery intro:** Take a look at real painting projects completed in North Jersey's most distinguished neighborhoods.
 
 **Testimonials intro:** Recent reviews from local homeowners across North Jersey.
 

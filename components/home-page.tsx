@@ -12,7 +12,6 @@ import { PaintCTA } from "@/components/paint-cta";
 import { PageHero } from "@/components/page-hero";
 import { TestimonialsSection } from "@/components/testimonials-section";
 import { ServiceCard } from "@/components/service-card";
-import { ServiceAreaSection } from "@/components/service-area-section";
 import { services } from "@/lib/services";
 import { testimonials } from "@/lib/testimonials";
 
@@ -335,8 +334,6 @@ export function HomePage() {
             </div>
           </div>
         </section>
-
-        <ServiceAreaSection />
       </main>
 
       <SiteFooter />
