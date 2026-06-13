@@ -6,7 +6,7 @@ export interface FaqItem {
 export const serviceFaqs: Record<string, FaqItem[]> = {
   "interior-painting": [
     {
-      question: "How much does interior painting cost in New Jersey?",
+      question: "How much does interior painting cost in North Jersey?",
       answer: "The price depends on how many rooms, the amount of prep work, and what surfaces need painting. We give you a clear estimate after looking at the project.",
     },
     {
@@ -28,7 +28,7 @@ export const serviceFaqs: Record<string, FaqItem[]> = {
   ],
   "exterior-painting": [
     {
-      question: "How much does exterior house painting cost in New Jersey?",
+      question: "How much does exterior house painting cost in North Jersey?",
       answer: "The price depends on the size of the home, siding type, prep work, and how much trim needs painting. We provide a clear estimate after inspecting the exterior.",
     },
     {
@@ -50,7 +50,7 @@ export const serviceFaqs: Record<string, FaqItem[]> = {
   ],
   "commercial-painting": [
     {
-      question: "Do you paint offices and commercial spaces in New Jersey?",
+      question: "Do you paint offices and commercial spaces in North Jersey?",
       answer: "Yes. We paint offices, retail stores, rental properties, warehouses, and other light commercial spaces across North Jersey.",
     },
     {
@@ -94,7 +94,7 @@ export const serviceFaqs: Record<string, FaqItem[]> = {
   ],
   "epoxy-floor-coatings": [
     {
-      question: "How much does epoxy flooring cost in New Jersey?",
+      question: "How much does epoxy flooring cost in North Jersey?",
       answer: "Pricing depends on the size of the floor, concrete condition, and coating options. We inspect the space and provide a free estimate.",
     },
     {

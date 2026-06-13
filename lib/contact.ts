@@ -5,9 +5,9 @@ export const contactInfo = {
   email: "sam@samthepainter.com",
   address: {
     street: "637 Wyckoff Ave",
-    city: "Franklin Lakes",
+    city: "Wyckoff",
     state: "NJ",
-    zip: "07417",
+    zip: "07481",
   },
   get fullAddress() {
     return `${this.address.street}, ${this.address.city}, ${this.address.state} ${this.address.zip}`;
@@ -15,6 +15,7 @@ export const contactInfo = {
   get mapsUrl() {
     return `https://www.google.com/maps?q=${encodeURIComponent(this.fullAddress)}`;
   },
+  facebookUrl: "https://www.facebook.com/samthepainter",
   hicNumber: "13VH03695800",
   license: "NJ HIC #13VH03695800",
 };

@@ -3,6 +3,7 @@
 import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import { Star, ChevronLeft, ChevronRight } from "lucide-react";
+import { contactInfo } from "@/lib/contact";
 import type { Testimonial } from "@/lib/testimonials";
 
 interface TestimonialsSectionProps {
@@ -208,9 +209,26 @@ export function TestimonialsSection({ items, serviceTitle }: TestimonialsSection
         </h2>
         <p className="text-sm max-w-xl text-neutral-600 font-normal">
           {serviceTitle
-            ? `Our physical spot inspections ensure absolute, pristine surface finishes. Here are recent reviews from local homeowners who chose Sam's Painting for ${serviceTitle.toLowerCase()}.`
-            : "Our physical spot inspections ensure absolute, pristine surface finishes. Here are reviews left recently by local homeowners."}
+            ? `Recent reviews from local homeowners who chose Sam's Painting for ${serviceTitle.toLowerCase()}.`
+            : "Recent reviews from local homeowners across North Jersey."}
         </p>
+        <a
+          href={contactInfo.mapsUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-2 text-sm font-bold text-accent-600 hover:text-accent-700 transition-colors"
+        >
+          <Image
+            src="/brands/google-g.svg"
+            alt=""
+            width={16}
+            height={16}
+            unoptimized
+            className="shrink-0"
+            aria-hidden
+          />
+          Read our 5-star reviews on Google
+        </a>
       </div>
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-8 group">

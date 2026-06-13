@@ -1,16 +1,17 @@
 import type { Metadata } from "next";
-import { Mail, Phone, Shield } from "lucide-react";
+import { Mail, MapPin, Phone, Shield } from "lucide-react";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
 import { PageHero } from "@/components/page-hero";
 import { ContactForm } from "@/components/contact-form";
 import { contactInfo } from "@/lib/contact";
+import { buildPageMetadata, contactMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Contact Sam's Painting | Free Estimates in New Jersey",
-  description:
-    "Call (201) 232-5978 or send a message for a free painting estimate. Serving homeowners and small businesses across New Jersey.",
-};
+export const metadata: Metadata = buildPageMetadata({
+  title: contactMetadata.title as string,
+  description: contactMetadata.description as string,
+  path: "/contact",
+});
 
 export default function ContactPage() {
   return (
@@ -62,6 +63,27 @@ export default function ContactPage() {
 
                   <li>
                     <a
+                      href={contactInfo.mapsUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-start gap-4 group"
+                    >
+                      <span className="p-2.5 rounded-xl bg-accent-50 border border-accent-100 text-accent-500 shrink-0">
+                        <MapPin size={18} className="stroke-[2.5]" />
+                      </span>
+                      <span>
+                        <span className="block text-xs font-bold uppercase tracking-wider text-neutral-500 mb-0.5">
+                          Office
+                        </span>
+                        <span className="text-base font-extrabold text-neutral-900 group-hover:text-accent-600 transition-colors">
+                          {contactInfo.fullAddress}
+                        </span>
+                      </span>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
                       href={`mailto:${contactInfo.email}`}
                       className="flex items-start gap-4 group"
                     >
@@ -97,7 +119,7 @@ export default function ContactPage() {
 
               <div className="rounded-2xl overflow-hidden border border-neutral-200 shadow-md bg-white h-[280px] sm:h-[320px] lg:h-full min-h-[280px]">
                 <iframe
-                  title="Sam's Painting — 637 Wyckoff Ave, Franklin Lakes, NJ"
+                  title={`Sam's Painting — ${contactInfo.fullAddress}`}
                   src={`${contactInfo.mapsUrl}&z=14&output=embed`}
                   className="w-full h-full border-0"
                   loading="lazy"

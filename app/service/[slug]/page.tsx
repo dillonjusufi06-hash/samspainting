@@ -11,6 +11,7 @@ import { TestimonialsSection } from "@/components/testimonials-section";
 import { getServiceBySlug, services } from "@/lib/services";
 import { getServiceFaqs } from "@/lib/service-faqs";
 import { getTestimonialsForService } from "@/lib/testimonials";
+import { buildPageMetadata, serviceSeo } from "@/lib/seo";
 
 interface ServicePageProps {
   params: Promise<{ slug: string }>;
@@ -28,10 +29,13 @@ export async function generateMetadata({ params }: ServicePageProps): Promise<Me
     return { title: "Service Not Found | Sam's Painting" };
   }
 
-  return {
-    title: `#1 Top Rated ${service.title} Company in New Jersey | Sam's Painting`,
-    description: service.tagline,
-  };
+  const seo = serviceSeo[slug];
+
+  return buildPageMetadata({
+    title: seo?.title ?? `${service.title} | Sam's Painting`,
+    description: seo?.description ?? service.tagline,
+    path: `/service/${slug}`,
+  });
 }
 
 const paintBrands = [
@@ -49,7 +53,8 @@ export default async function ServicePage({ params }: ServicePageProps) {
     notFound();
   }
 
-  const heroHeadline = `#1 Top Rated ${service.title} Company`;
+  const seo = serviceSeo[slug];
+  const heroHeadline = seo?.headline ?? `${service.title} in North Jersey`;
 
   return (
     <div className="min-h-screen bg-neutral-50 text-neutral-900 flex flex-col font-sans">
@@ -61,6 +66,7 @@ export default async function ServicePage({ params }: ServicePageProps) {
           imageAlt={service.title}
           headline={heroHeadline}
           tagline={service.tagline}
+          showLocation={false}
         />
 
         <section className="py-6 overflow-hidden relative z-20 bg-white">

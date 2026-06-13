@@ -9,8 +9,10 @@ interface PageHeroProps {
   tagline: string;
   showBadge?: boolean;
   showLocation?: boolean;
+  locationLabel?: string;
   showPhoneCta?: boolean;
   showRating?: boolean;
+  ratingNote?: string;
   id?: string;
 }
 
@@ -21,8 +23,10 @@ export function PageHero({
   tagline,
   showBadge = true,
   showLocation = true,
+  locationLabel = "North Jersey",
   showPhoneCta = true,
   showRating = false,
+  ratingNote,
   id,
 }: PageHeroProps) {
   return (
@@ -56,7 +60,7 @@ export function PageHero({
             <>
               {" "}
               <span className="bg-gradient-to-r from-amber-200 via-amber-400 to-yellow-500 bg-clip-text text-transparent font-black">
-                in New Jersey
+                in {locationLabel}
               </span>
             </>
           )}
@@ -77,13 +81,16 @@ export function PageHero({
         )}
 
         {showRating && (
-          <div className="flex justify-center pt-6 sm:pt-8 border-t border-white/20 w-fit mx-auto">
+          <div className="flex flex-col items-center gap-2 pt-6 sm:pt-8 border-t border-white/20 w-fit mx-auto">
             <div className="flex items-center space-x-1 justify-center">
               {[...Array(5)].map((_, i) => (
                 <Star key={i} size={16} className="fill-amber-400 text-amber-400" />
               ))}
-              <span className="text-sm font-black ml-2 text-white">5.0 Star Premium Rated</span>
+              <span className="text-sm font-black ml-2 text-white">5.0 Star Rated</span>
             </div>
+            {ratingNote && (
+              <span className="text-[11px] text-white/70 font-medium">{ratingNote}</span>
+            )}
           </div>
         )}
       </div>
