@@ -43,12 +43,6 @@
   animation: marquee 150s linear infinite;
 }
 
-.animate-marquee-reverse {
-  display: flex;
-  width: max-content;
-  animation: marquee-reverse 55s linear infinite;
-}
-
 .animate-marquee-reverse-slow {
   display: flex;
   width: max-content;
