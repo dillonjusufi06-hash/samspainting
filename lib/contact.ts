@@ -16,6 +16,8 @@ export const contactInfo = {
     return `https://www.google.com/maps?q=${encodeURIComponent(this.fullAddress)}`;
   },
   facebookUrl: "https://www.facebook.com/samthepainter",
+  instagramUrl: "https://www.instagram.com/samspainting",
+  instagramHandle: "@samspainting",
   hicNumber: "13VH03695800",
   license: "NJ HIC #13VH03695800",
 };

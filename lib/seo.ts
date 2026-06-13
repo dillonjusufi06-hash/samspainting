@@ -169,6 +169,6 @@ export function localBusinessJsonLd() {
       "@type": "AdministrativeArea",
       name,
     })),
-    sameAs: [contactInfo.facebookUrl],
+    sameAs: [contactInfo.facebookUrl, contactInfo.instagramUrl],
   };
 }

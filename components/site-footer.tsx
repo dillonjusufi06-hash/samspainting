@@ -86,8 +86,13 @@ export function SiteFooter() {
                 </a>
               </p>
               <p>
-                <a href={`mailto:${contactInfo.email}`} className="hover:text-accent-300 transition-colors">
-                  {contactInfo.email}
+                <a
+                  href={contactInfo.instagramUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-accent-300 transition-colors"
+                >
+                  {contactInfo.instagramHandle}
                 </a>
               </p>
             </address>

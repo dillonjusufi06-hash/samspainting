@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { Phone } from "lucide-react";
+import { Instagram, Phone } from "lucide-react";
+import { contactInfo } from "@/lib/contact";
 import { SiteLogo } from "./site-logo";
 
 export function SiteHeader() {
@@ -10,8 +11,8 @@ export function SiteHeader() {
           <SiteLogo />
         </Link>
 
-        <div className="flex items-center space-x-6 sm:space-x-8">
-          <nav className="hidden lg:flex items-center space-x-6 text-xs font-bold tracking-wider">
+        <div className="flex items-center gap-2 sm:gap-4 lg:gap-6 shrink-0">
+          <nav className="hidden lg:flex items-center gap-6 text-xs font-bold tracking-wider">
             <Link href="/#services" className="hover:text-accent-500 transition-colors text-neutral-700">
               Services
             </Link>
@@ -27,11 +28,22 @@ export function SiteHeader() {
           </nav>
 
           <a
-            href="tel:2012325978"
-            className="flex items-center gap-2 bg-accent-500 hover:bg-accent-600 active:bg-accent-700 text-white px-4 py-2 sm:px-5 sm:py-2.5 rounded-full text-xs font-extrabold tracking-wider transition-all shadow-xs hover:shadow-sm active:scale-95 whitespace-nowrap"
+            href={contactInfo.instagramUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Sam's Painting on Instagram"
+            className="flex h-9 w-9 items-center justify-center rounded-full text-neutral-700 hover:text-accent-500 hover:bg-neutral-100 transition-colors shrink-0"
           >
-            <Phone size={13} className="stroke-[2.5]" />
-            <span>(201) 232-5978</span>
+            <Instagram size={18} className="stroke-[2.5]" />
+          </a>
+
+          <a
+            href={contactInfo.phoneHref}
+            aria-label={`Call ${contactInfo.phone}`}
+            className="flex h-9 w-9 sm:h-auto sm:w-auto items-center justify-center gap-2 bg-accent-500 hover:bg-accent-600 active:bg-accent-700 text-white sm:px-5 sm:py-2.5 rounded-full text-xs font-extrabold tracking-wider transition-all shadow-xs hover:shadow-sm active:scale-95 shrink-0"
+          >
+            <Phone size={15} className="stroke-[2.5]" />
+            <span className="hidden sm:inline whitespace-nowrap">{contactInfo.phone}</span>
           </a>
         </div>
       </div>
