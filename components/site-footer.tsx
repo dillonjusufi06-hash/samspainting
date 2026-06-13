@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Facebook, Instagram } from "lucide-react";
 import { services } from "@/lib/services";
 import { contactInfo } from "@/lib/contact";
 import { SiteLogo } from "./site-logo";
@@ -15,6 +16,26 @@ export function SiteFooter() {
             <p className="text-sm text-neutral-400 leading-relaxed max-w-xs">
               Based in Wyckoff, serving discerning homeowners across Bergen, Morris, and Essex counties.
             </p>
+            <div className="flex items-center gap-3">
+              <a
+                href={contactInfo.facebookUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Sam's Painting on Facebook"
+                className="flex h-9 w-9 items-center justify-center rounded-full border border-neutral-800 text-neutral-400 hover:text-accent-300 hover:border-neutral-700 transition-colors"
+              >
+                <Facebook size={16} className="stroke-[2.5]" />
+              </a>
+              <a
+                href={contactInfo.instagramUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Sam's Painting on Instagram"
+                className="flex h-9 w-9 items-center justify-center rounded-full border border-neutral-800 text-neutral-400 hover:text-accent-300 hover:border-neutral-700 transition-colors"
+              >
+                <Instagram size={16} className="stroke-[2.5]" />
+              </a>
+            </div>
           </div>
 
           <div>
