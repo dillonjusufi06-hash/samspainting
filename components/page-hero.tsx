@@ -50,7 +50,7 @@ export function PageHero({
         {showBadge && (
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-black/60 border border-white/20 rounded-full w-fit mx-auto backdrop-blur-sm shadow-lg">
             <Shield size={14} className="stroke-[2.5] text-accent-400 shrink-0" />
-            <span className="text-xs tracking-wider text-white font-bold">{trustBadge}</span>
+            <span className="text-xs tracking-wider text-white font-bold whitespace-nowrap">{trustBadge}</span>
           </div>
         )}
 

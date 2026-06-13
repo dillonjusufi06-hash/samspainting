@@ -20,7 +20,7 @@ export const contactInfo = {
   license: "NJ HIC #13VH03695800",
 };
 
-export const trustBadge = `Licensed, Bonded & Insured · HIC #${contactInfo.hicNumber}`;
+export const trustBadge = "Licensed, Bonded & Insured";
 
 export const filloutFormId = "uDciW1RQQvus";
 
