@@ -9,6 +9,7 @@ export const siteConfig = {
   defaultTitle: "Sam's Painting",
   locationLabel: "North Jersey",
   ogImage: "/banner.jpg",
+  favicon: "/favicon.svg",
 };
 
 export const serviceArea = {
@@ -104,6 +105,11 @@ export function buildPageMetadata({
   return {
     title,
     description,
+    icons: {
+      icon: [{ url: siteConfig.favicon, type: "image/svg+xml" }],
+      shortcut: [siteConfig.favicon],
+      apple: [{ url: siteConfig.favicon, type: "image/svg+xml" }],
+    },
     openGraph: {
       title,
       description,
