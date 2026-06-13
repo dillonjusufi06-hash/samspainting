@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { Mail, MapPin, Phone, Shield } from "lucide-react";
+import { Clock, Mail, MapPin, Phone, Shield } from "lucide-react";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
 import { PageHero } from "@/components/page-hero";
-import { ContactForm } from "@/components/contact-form";
+import { ContactFormBlock } from "@/components/contact-form-section";
 import { contactInfo } from "@/lib/contact";
 import { buildPageMetadata, contactMetadata } from "@/lib/seo";
 
@@ -103,6 +103,20 @@ export default function ContactPage() {
 
                   <li className="flex items-start gap-4">
                     <span className="p-2.5 rounded-xl bg-accent-50 border border-accent-100 text-accent-500 shrink-0">
+                      <Clock size={18} className="stroke-[2.5]" />
+                    </span>
+                    <span>
+                      <span className="block text-xs font-bold uppercase tracking-wider text-neutral-500 mb-0.5">
+                        Hours
+                      </span>
+                      <span className="text-base font-extrabold text-neutral-900">
+                        {contactInfo.hours}
+                      </span>
+                    </span>
+                  </li>
+
+                  <li className="flex items-start gap-4">
+                    <span className="p-2.5 rounded-xl bg-accent-50 border border-accent-100 text-accent-500 shrink-0">
                       <Shield size={18} className="stroke-[2.5]" />
                     </span>
                     <span>
@@ -129,8 +143,8 @@ export default function ContactPage() {
               </div>
             </div>
 
-            <div className="mt-16 sm:mt-20 max-w-lg mx-auto">
-              <ContactForm />
+            <div className="mt-16 sm:mt-20">
+              <ContactFormBlock />
             </div>
           </div>
         </section>

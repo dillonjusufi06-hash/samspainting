@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { contactInfo } from "@/lib/contact";
+import { getServiceBySlug, services } from "@/lib/services";
 
 export const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.samspaintingnj.com";
 
@@ -45,37 +46,37 @@ export const serviceSeo: Record<
     title: "Interior Painting Services | North Jersey Home Painters",
     description:
       "Flawless walls, trim, and ceilings. Dust-free prep and premium paints for your North Jersey home. Call for a free design & color estimate.",
-    headline: "Professional Interior Painting in North Jersey",
+    headline: "Professional Interior Painting",
   },
   "exterior-painting": {
     title: "Exterior House Painting & Prep Experts | North Jersey",
     description:
       "Weather-resistant exterior painting engineered for NJ climates. Power washing, thorough scraping, and long-lasting finishes.",
-    headline: "Exterior House Painting & Prep in North Jersey",
+    headline: "Exterior House Painting & Prep",
   },
   "commercial-painting": {
     title: "Commercial Painting Contractors | North Jersey Offices",
     description:
       "Office, retail, and light commercial painting. Flexible after-hours scheduling, minimal business disruption, and durable coatings.",
-    headline: "Commercial Painting for North Jersey Businesses",
+    headline: "Commercial Painting for Businesses",
   },
   "deck-and-fence-staining": {
     title: "Deck & Fence Staining Services | Bergen & Morris County",
     description:
       "Protect your outdoor wood. Professional power washing, sanding, and premium deep-penetrating staining to withstand NJ winters.",
-    headline: "Deck & Fence Staining in North Jersey",
+    headline: "Deck & Fence Staining",
   },
   "epoxy-floor-coatings": {
     title: "Garage Epoxy Floor Coatings | North Jersey Installation",
     description:
       "Turn your garage into a clean workspace. Heavy-duty, slip-resistant industrial epoxy floors built to resist oil and tire marks.",
-    headline: "Garage Epoxy Floor Coatings in North Jersey",
+    headline: "Garage Epoxy Floor Coatings",
   },
   "cabinet-painting": {
     title: "Kitchen Cabinet Painting & Refinishing | North Jersey",
     description:
       "Get a luxury factory-smooth kitchen remodel at a fraction of the cost of replacement. Durable, scratch-resistant cabinet finishes.",
-    headline: "Kitchen Cabinet Painting in North Jersey",
+    headline: "Kitchen Cabinet Painting",
   },
 };
 
@@ -135,6 +136,52 @@ export function buildPageMetadata({
   };
 }
 
+const areaServedSchema = [
+  { "@type": "AdministrativeArea", name: "Bergen County" },
+  { "@type": "AdministrativeArea", name: "Morris County" },
+  { "@type": "AdministrativeArea", name: "Essex County" },
+];
+
+function absoluteImageUrl(image: string) {
+  return image.startsWith("http") ? image : `${siteUrl}${image.startsWith("/") ? image : `/${image}`}`;
+}
+
+export function serviceJsonLd(slug: string) {
+  const service = getServiceBySlug(slug);
+  if (!service) return null;
+
+  const seo = serviceSeo[slug];
+  const path = `/service/${slug}`;
+  const url = `${siteUrl}${path}`;
+
+  return {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "@id": `${url}#service`,
+    name: service.title,
+    description: seo?.description ?? service.tagline,
+    url,
+    image: absoluteImageUrl(service.image),
+    serviceType: service.title,
+    category: "Painting",
+    provider: {
+      "@type": "PaintingContractor",
+      "@id": `${siteUrl}/#localbusiness`,
+      name: contactInfo.businessName,
+      url: siteUrl,
+      telephone: "+12012325978",
+    },
+    areaServed: areaServedSchema,
+    offers: {
+      "@type": "Offer",
+      url: `${siteUrl}/contact`,
+      priceCurrency: "USD",
+      availability: "https://schema.org/InStock",
+      description: "Free estimates available",
+    },
+  };
+}
+
 export function localBusinessJsonLd() {
   return {
     "@context": "https://schema.org",
@@ -145,7 +192,7 @@ export function localBusinessJsonLd() {
     url: siteUrl,
     telephone: "+12012325978",
     email: contactInfo.email,
-    priceRange: "$$$",
+    priceRange: "$$",
     address: {
       "@type": "PostalAddress",
       streetAddress: contactInfo.address.street,
@@ -159,16 +206,37 @@ export function localBusinessJsonLd() {
       latitude: 41.0097,
       longitude: -74.1718,
     },
-    openingHoursSpecification: {
-      "@type": "OpeningHoursSpecification",
-      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-      opens: "07:00",
-      closes: "18:00",
+    openingHoursSpecification: [
+      {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday",
+        ],
+        opens: "00:00",
+        closes: "23:59",
+      },
+    ],
+    areaServed: areaServedSchema,
+    hasOfferCatalog: {
+      "@type": "OfferCatalog",
+      name: "Painting Services",
+      itemListElement: services.map((service, index) => ({
+        "@type": "Offer",
+        position: index + 1,
+        itemOffered: {
+          "@type": "Service",
+          name: service.title,
+          description: service.tagline,
+          url: `${siteUrl}/service/${service.slug}`,
+        },
+      })),
     },
-    areaServed: serviceArea.counties.map((name) => ({
-      "@type": "AdministrativeArea",
-      name,
-    })),
     sameAs: [contactInfo.facebookUrl, contactInfo.instagramUrl],
   };
 }

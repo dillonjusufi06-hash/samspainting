@@ -18,6 +18,7 @@ export const contactInfo = {
   facebookUrl: "https://www.facebook.com/samthepainter",
   instagramUrl: "https://www.instagram.com/samspainting",
   instagramHandle: "@samspainting",
+  hours: "Open 24 hours",
   hicNumber: "13VH03695800",
   license: "NJ HIC #13VH03695800",
 };

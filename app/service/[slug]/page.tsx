@@ -7,7 +7,9 @@ import { PageHero } from "@/components/page-hero";
 import { PaintCTA } from "@/components/paint-cta";
 import { SubservicesSection } from "@/components/subservices-section";
 import { FaqSection } from "@/components/faq-section";
+import { ContactFormSection } from "@/components/contact-form-section";
 import { TestimonialsSection } from "@/components/testimonials-section";
+import { ServiceSchema } from "@/components/service-schema";
 import { getServiceBySlug, services } from "@/lib/services";
 import { getServiceFaqs } from "@/lib/service-faqs";
 import { getTestimonialsForService } from "@/lib/testimonials";
@@ -54,10 +56,11 @@ export default async function ServicePage({ params }: ServicePageProps) {
   }
 
   const seo = serviceSeo[slug];
-  const heroHeadline = seo?.headline ?? `${service.title} in North Jersey`;
+  const heroHeadline = seo?.headline ?? service.title;
 
   return (
     <div className="min-h-screen bg-neutral-50 text-neutral-900 flex flex-col font-sans">
+      <ServiceSchema slug={slug} />
       <SiteHeader />
 
       <main className="flex-1 z-10 relative">
@@ -66,7 +69,6 @@ export default async function ServicePage({ params }: ServicePageProps) {
           imageAlt={service.title}
           headline={heroHeadline}
           tagline={service.tagline}
-          showLocation={false}
         />
 
         <section className="py-6 overflow-hidden relative z-20 bg-white">
@@ -106,6 +108,8 @@ export default async function ServicePage({ params }: ServicePageProps) {
         <PaintCTA />
 
         <FaqSection items={getServiceFaqs(slug)} serviceTitle={service.title} />
+
+        <ContactFormSection />
       </main>
 
       <SiteFooter />
