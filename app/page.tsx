@@ -143,7 +143,6 @@ export default function Home() {
           id="hero"
           imageSrc="/banner.jpg"
           imageAlt="Sam's Painting"
-          badge="#1 Top-Rated Painting Company"
           headline="#1 Top-Rated Painting Company"
           tagline="With years of experience in the painting industry, our team is ready to answer your questions and address your concerns. We know you will be thrilled with the finished product."
           showRating

@@ -59,7 +59,6 @@ export default async function ServicePage({ params }: ServicePageProps) {
         <PageHero
           imageSrc={service.image}
           imageAlt={service.title}
-          badge={heroHeadline}
           headline={heroHeadline}
           tagline={service.tagline}
         />

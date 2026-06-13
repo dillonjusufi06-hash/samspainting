@@ -1,6 +1,6 @@
 import Link from "next/link";
-import { Phone } from "lucide-react";
 import { services } from "@/lib/services";
+import { contactInfo } from "@/lib/contact";
 import { SiteLogo } from "./site-logo";
 
 export function SiteFooter() {
@@ -15,13 +15,6 @@ export function SiteFooter() {
             <p className="text-sm text-neutral-400 leading-relaxed max-w-xs">
               Professional painting in Wayne and North Jersey for homes and small businesses.
             </p>
-            <a
-              href="tel:2012325978"
-              className="inline-flex items-center gap-2 text-xs font-bold tracking-wider text-white hover:text-accent-300 transition-colors"
-            >
-              <Phone size={13} className="stroke-[2.5]" />
-              <span>(201) 232-5978</span>
-            </a>
           </div>
 
           <div>
@@ -73,24 +66,36 @@ export function SiteFooter() {
 
           <div>
             <h4 className="text-xs font-black uppercase tracking-wider text-white mb-4">Contact</h4>
-            <ul className="space-y-2.5 text-sm text-neutral-400">
-              <li>Wayne Metro Area • New Jersey</li>
-              <li>
-                <a href="tel:2012325978" className="hover:text-accent-300 transition-colors">
-                  201-232-5978
+            <address className="not-italic space-y-2.5 text-sm text-neutral-400">
+              <p className="font-bold text-white">{contactInfo.businessName}</p>
+              <p>
+                <a
+                  href={contactInfo.mapsUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-accent-300 transition-colors"
+                >
+                  {contactInfo.address.street}
+                  <br />
+                  {contactInfo.address.city}, {contactInfo.address.state} {contactInfo.address.zip}
                 </a>
-              </li>
-              <li>
-                <a href="mailto:sam@samthepainter.com" className="hover:text-accent-300 transition-colors">
-                  sam@samthepainter.com
+              </p>
+              <p>
+                <a href={contactInfo.phoneHref} className="hover:text-accent-300 transition-colors">
+                  {contactInfo.phone}
                 </a>
-              </li>
-            </ul>
+              </p>
+              <p>
+                <a href={`mailto:${contactInfo.email}`} className="hover:text-accent-300 transition-colors">
+                  {contactInfo.email}
+                </a>
+              </p>
+            </address>
           </div>
         </div>
 
         <div className="mt-12 pt-6 border-t border-neutral-800 text-center text-[11px] text-neutral-500">
-          <p>© 2026 Sam&apos;s Painting LLC. Licensed, Bonded &amp; Fully Insured. NJ HIC #13VH09284100</p>
+          <p>© 2026 {contactInfo.businessName}. Licensed, Bonded &amp; Fully Insured. {contactInfo.license}</p>
         </div>
       </div>
     </footer>

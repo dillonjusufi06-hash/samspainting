@@ -21,9 +21,10 @@ export default function ContactPage() {
         <PageHero
           imageSrc="/banner.jpg"
           imageAlt="Contact Sam's Painting"
-          badge="Free Estimates · Fast Response"
           headline="Contact Us"
-          tagline="Call, email, or send a message. We answer questions, schedule free estimates, and serve homeowners and small businesses across New Jersey."
+          tagline="Call, email, or send a message below."
+          showLocation={false}
+          showPhoneCta={false}
         />
 
         <section className="py-16 sm:py-24">
@@ -52,7 +53,7 @@ export default function ContactPage() {
                         <span className="block text-xs font-bold uppercase tracking-wider text-neutral-500 mb-0.5">
                           Phone
                         </span>
-                        <span className="text-lg font-extrabold text-neutral-900 group-hover:text-accent-600 transition-colors">
+                        <span className="text-base font-extrabold text-neutral-900 group-hover:text-accent-600 transition-colors">
                           {contactInfo.phone}
                         </span>
                       </span>
@@ -71,7 +72,7 @@ export default function ContactPage() {
                         <span className="block text-xs font-bold uppercase tracking-wider text-neutral-500 mb-0.5">
                           Email
                         </span>
-                        <span className="text-base font-bold text-neutral-900 group-hover:text-accent-600 transition-colors">
+                        <span className="text-base font-extrabold text-neutral-900 group-hover:text-accent-600 transition-colors">
                           {contactInfo.email}
                         </span>
                       </span>
@@ -86,7 +87,7 @@ export default function ContactPage() {
                       <span className="block text-xs font-bold uppercase tracking-wider text-neutral-500 mb-0.5">
                         Licensed &amp; Insured
                       </span>
-                      <span className="text-base font-bold text-neutral-900">
+                      <span className="text-base font-extrabold text-neutral-900">
                         {contactInfo.license}
                       </span>
                     </span>
@@ -96,8 +97,8 @@ export default function ContactPage() {
 
               <div className="rounded-2xl overflow-hidden border border-neutral-200 shadow-md bg-white h-[280px] sm:h-[320px] lg:h-full min-h-[280px]">
                 <iframe
-                  title="Sam's Painting New Jersey service area map"
-                  src="https://www.google.com/maps?q=New+Jersey&z=7&output=embed"
+                  title="Sam's Painting — 637 Wyckoff Ave, Franklin Lakes, NJ"
+                  src={`${contactInfo.mapsUrl}&z=14&output=embed`}
                   className="w-full h-full border-0"
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
@@ -106,7 +107,7 @@ export default function ContactPage() {
               </div>
             </div>
 
-            <div className="mt-16 sm:mt-20 max-w-xl mx-auto">
+            <div className="mt-16 sm:mt-20 max-w-lg mx-auto">
               <ContactForm />
             </div>
           </div>

@@ -5,7 +5,7 @@ import { filloutFormId } from "@/lib/contact";
 
 export function ContactForm() {
   return (
-    <div className="w-full min-h-[320px]">
+    <div className="w-full max-w-lg mx-auto">
       <FilloutStandardEmbed filloutId={filloutFormId} dynamicResize inheritParameters />
     </div>
   );
