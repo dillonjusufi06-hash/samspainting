@@ -4,10 +4,10 @@ export const contactInfo = {
   phoneHref: "tel:2012325978",
   email: "sam@samthepainter.com",
   address: {
-    street: "637 Wyckoff Ave",
-    city: "Wyckoff",
+    street: "574 Commerce St #2023",
+    city: "Franklin Lakes",
     state: "NJ",
-    zip: "07481",
+    zip: "07417",
   },
   get fullAddress() {
     return `${this.address.street}, ${this.address.city}, ${this.address.state} ${this.address.zip}`;

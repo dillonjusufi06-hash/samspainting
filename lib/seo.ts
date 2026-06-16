@@ -14,7 +14,7 @@ export const siteConfig = {
 };
 
 export const serviceArea = {
-  hub: "Wyckoff",
+  hub: "Franklin Lakes",
   counties: ["Bergen County", "Morris County", "Essex County"],
   towns: [
     "Wyckoff",
@@ -83,7 +83,7 @@ export const serviceSeo: Record<
 export const homeMetadata: Metadata = {
   title: "Professional House Painters in North Jersey | Sam's Painting",
   description:
-    "Premium interior & exterior painting in Wyckoff, Franklin Lakes, Ridgewood, and North Jersey's finest neighborhoods. Fully licensed & insured. Free estimates.",
+    "Premium interior & exterior painting in Franklin Lakes, Ridgewood, and North Jersey's finest neighborhoods. Fully licensed & insured. Free estimates.",
 };
 
 export const contactMetadata: Metadata = {
@@ -203,8 +203,8 @@ export function localBusinessJsonLd() {
     },
     geo: {
       "@type": "GeoCoordinates",
-      latitude: 41.0097,
-      longitude: -74.1718,
+      latitude: 41.0164,
+      longitude: -74.2057,
     },
     openingHoursSpecification: [
       {

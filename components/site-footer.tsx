@@ -14,7 +14,7 @@ export function SiteFooter() {
               <SiteLogo dark />
             </Link>
             <p className="text-sm text-neutral-400 leading-relaxed max-w-xs">
-              Based in Wyckoff, serving discerning homeowners across Bergen, Morris, and Essex counties.
+              Based in Franklin Lakes, serving discerning homeowners across Bergen, Morris, and Essex counties.
             </p>
             <div className="flex items-center gap-3">
               <a

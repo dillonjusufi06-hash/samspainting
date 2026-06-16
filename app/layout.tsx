@@ -14,7 +14,7 @@ const sans = Plus_Jakarta_Sans({
 export const metadata: Metadata = buildPageMetadata({
   title: "Sam's Painting | House Painting in North Jersey",
   description:
-    "Interior painting, exterior painting, cabinet painting, deck staining, epoxy floors, and commercial painting in Wyckoff, Franklin Lakes, and Bergen County. Free estimates. Call (201) 232-5978.",
+    "Interior painting, exterior painting, cabinet painting, deck staining, epoxy floors, and commercial painting in Franklin Lakes and Bergen County. Free estimates. Call (201) 232-5978.",
 });
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

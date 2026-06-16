@@ -119,7 +119,7 @@ export function HomePage() {
     { id: "project-10", image: "https://i.imgur.com/voeCG8X.png", title: "Kitchen & Dining", location: "Mendham, NJ" },
     { id: "project-11", image: "https://i.imgur.com/X0SN4kK.png", title: "Home Office", location: "Summit, NJ" },
     { id: "project-12", image: "https://i.imgur.com/o0oq3Ma.jpeg", title: "Exterior Trim Prep", location: "Englewood Cliffs, NJ" },
-    { id: "project-13", image: "https://i.imgur.com/Bkh6jte.jpeg", title: "Sam's Painting Crew", location: "Wyckoff, NJ" },
+    { id: "project-13", image: "https://i.imgur.com/Bkh6jte.jpeg", title: "Sam's Painting Crew", location: "Franklin Lakes, NJ" },
     { id: "project-14", image: "https://i.imgur.com/sHCligV.jpeg", title: "Foyer Painting", location: "Tenafly, NJ" },
     { id: "project-15", image: "https://i.imgur.com/XDFLr3O.jpeg", title: "Media Room", location: "Ridgewood, NJ" },
     { id: "project-16", image: "https://i.imgur.com/Vyuh1We.jpeg", title: "Cabinet Painting", location: "Franklin Lakes, NJ" },
@@ -136,7 +136,7 @@ export function HomePage() {
           imageSrc="/banner.jpg"
           imageAlt="Sam's Painting"
           headline="Professional House Painters"
-          tagline="Licensed, bonded, and insured painters based in Wyckoff. Careful prep, premium paints, and immaculate job sites across Bergen, Morris, and Essex County's finest neighborhoods."
+          tagline="Licensed, bonded, and insured painters based in Franklin Lakes. Careful prep, premium paints, and immaculate job sites across Bergen, Morris, and Essex County's finest neighborhoods."
           showRating
           ratingNote="Based on local customer reviews"
         />
