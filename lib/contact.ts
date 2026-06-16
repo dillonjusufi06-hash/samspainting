@@ -2,7 +2,6 @@ export const contactInfo = {
   businessName: "Sam's Painting LLC",
   phone: "(201) 232-5978",
   phoneHref: "tel:2012325978",
-  email: "sam@samthepainter.com",
   address: {
     street: "574 Commerce St #2023",
     city: "Franklin Lakes",

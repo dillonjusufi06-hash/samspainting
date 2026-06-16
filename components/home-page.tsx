@@ -109,20 +109,20 @@ export function HomePage() {
   ];
 
   const pastProjects: PastProject[] = [
-    { id: "project-1", image: "https://i.imgur.com/V4Zenes.jpeg", title: "Interior Living Room", location: "Short Hills, NJ" },
-    { id: "project-2", image: "https://i.imgur.com/HjbsRn1.jpeg", title: "Dining Room & Trim", location: "Rumson, NJ" },
+    { id: "project-1", image: "https://i.imgur.com/V4Zenes.jpeg", title: "At home movie theater", location: "Short Hills, NJ" },
+    { id: "project-2", image: "https://i.imgur.com/HjbsRn1.jpeg", title: "Custom staircase and foyer", location: "Rumson, NJ" },
     { id: "project-3", image: "https://i.imgur.com/gEcyqlo.jpeg", title: "Pool House Exterior", location: "Franklin Lakes, NJ" },
     { id: "project-4", image: "https://i.imgur.com/CXopZpU.jpeg", title: "Deck Staining", location: "Saddle River, NJ" },
-    { id: "project-6", image: "https://i.imgur.com/q3l77CF.png", title: "Interior Library", location: "Montclair, NJ" },
-    { id: "project-7", image: "https://i.imgur.com/JsGQKnE.png", title: "Interior Trim Work", location: "Alpine, NJ" },
-    { id: "project-8", image: "https://i.imgur.com/xqU3aOp.jpeg", title: "Interior Woodwork", location: "Chatham, NJ" },
+    { id: "project-6", image: "https://i.imgur.com/q3l77CF.png", title: "French Door & Trim Painting", location: "Montclair, NJ" },
+    { id: "project-7", image: "https://i.imgur.com/JsGQKnE.png", title: "Dark Interior Trim Painting", location: "Alpine, NJ" },
+    { id: "project-8", image: "https://i.imgur.com/xqU3aOp.jpeg", title: "Dining Room Woodwork Painting", location: "Chatham, NJ" },
     { id: "project-10", image: "https://i.imgur.com/voeCG8X.png", title: "Kitchen & Dining", location: "Mendham, NJ" },
     { id: "project-11", image: "https://i.imgur.com/X0SN4kK.png", title: "Home Office", location: "Summit, NJ" },
     { id: "project-12", image: "https://i.imgur.com/o0oq3Ma.jpeg", title: "Exterior Trim Prep", location: "Englewood Cliffs, NJ" },
     { id: "project-13", image: "https://i.imgur.com/Bkh6jte.jpeg", title: "Sam's Painting Crew", location: "Franklin Lakes, NJ" },
     { id: "project-14", image: "https://i.imgur.com/sHCligV.jpeg", title: "Foyer Painting", location: "Tenafly, NJ" },
     { id: "project-15", image: "https://i.imgur.com/XDFLr3O.jpeg", title: "Media Room", location: "Ridgewood, NJ" },
-    { id: "project-16", image: "https://i.imgur.com/Vyuh1We.jpeg", title: "Cabinet Painting", location: "Franklin Lakes, NJ" },
+    { id: "project-16", image: "https://i.imgur.com/Vyuh1We.jpeg", title: "Coffered Ceiling & Cabinet Painting", location: "Franklin Lakes, NJ" },
     { id: "project-9", image: "https://i.imgur.com/4c1vAQI.jpeg", title: "Hallway Painting", location: "Millburn, NJ" },
   ];
 

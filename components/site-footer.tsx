@@ -79,7 +79,6 @@ export function SiteFooter() {
           <div>
             <h4 className="text-xs font-black uppercase tracking-wider text-white mb-4">Contact</h4>
             <address className="not-italic space-y-2.5 text-sm text-neutral-400">
-              <p className="font-bold text-white">{contactInfo.businessName}</p>
               <p>
                 <a
                   href={contactInfo.mapsUrl}
@@ -87,9 +86,7 @@ export function SiteFooter() {
                   rel="noopener noreferrer"
                   className="hover:text-accent-300 transition-colors"
                 >
-                  {contactInfo.address.street}
-                  <br />
-                  {contactInfo.address.city}, {contactInfo.address.state} {contactInfo.address.zip}
+                  {contactInfo.fullAddress}
                 </a>
               </p>
               <p>

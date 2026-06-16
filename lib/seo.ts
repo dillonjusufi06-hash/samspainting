@@ -191,7 +191,6 @@ export function localBusinessJsonLd() {
     "@id": `${siteUrl}/#localbusiness`,
     url: siteUrl,
     telephone: "+12012325978",
-    email: contactInfo.email,
     priceRange: "$$",
     address: {
       "@type": "PostalAddress",

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Clock, Mail, MapPin, Phone, Shield } from "lucide-react";
+import { Clock, MapPin, Phone, Shield } from "lucide-react";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
 import { PageHero } from "@/components/page-hero";
@@ -23,7 +23,7 @@ export default function ContactPage() {
           imageSrc="/banner.jpg"
           imageAlt="Contact Sam's Painting"
           headline="Contact Us"
-          tagline="Call, email, or send a message below."
+          tagline="Call or send a message below."
           showLocation={false}
           showPhoneCta={false}
         />
@@ -77,25 +77,6 @@ export default function ContactPage() {
                         </span>
                         <span className="text-base font-extrabold text-neutral-900 group-hover:text-accent-600 transition-colors">
                           {contactInfo.fullAddress}
-                        </span>
-                      </span>
-                    </a>
-                  </li>
-
-                  <li>
-                    <a
-                      href={`mailto:${contactInfo.email}`}
-                      className="flex items-start gap-4 group"
-                    >
-                      <span className="p-2.5 rounded-xl bg-accent-50 border border-accent-100 text-accent-500 shrink-0">
-                        <Mail size={18} className="stroke-[2.5]" />
-                      </span>
-                      <span>
-                        <span className="block text-xs font-bold uppercase tracking-wider text-neutral-500 mb-0.5">
-                          Email
-                        </span>
-                        <span className="text-base font-extrabold text-neutral-900 group-hover:text-accent-600 transition-colors">
-                          {contactInfo.email}
                         </span>
                       </span>
                     </a>

@@ -11,16 +11,15 @@
 - **Primary market:** North Jersey — Wyckoff hub; affluent Bergen, Morris, and Essex county communities
 - **Live URL:** https://www.samspaintingnj.com/
 - **Tech:** Next.js 15 (React), static service pages, client-side FAQ/testimonials/form embeds
-- **Lead capture:** Phone, email, Fillout form embed (popup + contact page inline), floating CTAs site-wide
+- **Lead capture:** Phone, Fillout form embed (popup + contact page inline), floating CTAs site-wide
 
 ---
 
 ## NAP (Name, Address, Phone) — Footer Contact Block
 
 - **Name:** Sam's Painting LLC
-- **Address:** 637 Wyckoff Ave, Wyckoff, NJ 07481
+- **Address:** 574 Commerce St #2023, Franklin Lakes, NJ 07417
 - **Phone:** (201) 232-5978
-- **Email:** sam@samthepainter.com
 - **License:** NJ HIC #13VH03695800
 - **Footer tagline (logo column):** "Based in Wyckoff, serving discerning homeowners across Bergen, Morris, and Essex counties."
 
@@ -124,9 +123,9 @@ Each service page has a unique meta description and H1 (no `#1 Top Rated` templa
 
 **Hero H1:** Contact Us
 
-**Hero tagline:** Call, email, or send a message below.
+**Hero tagline:** Call or send a message below.
 
-**Listed:** Phone, Email, Licensed & Insured (NJ HIC #13VH03695800)
+**Listed:** Phone, Office, Hours, Licensed & Insured (NJ HIC #13VH03695800)
 
 **Map:** 637 Wyckoff Ave, Wyckoff, NJ 07481
 
