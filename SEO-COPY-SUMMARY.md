@@ -153,7 +153,7 @@ Each service page has a unique meta description and H1 (no `#1 Top Rated` templa
 - Service-specific FAQs
 - Physical address + map on contact page
 - NAP in footer `<address>` block
-- LocalBusiness JSON-LD (`PaintingContractor`) with Wyckoff address, geo, areaServed, Facebook sameAs
+- LocalBusiness JSON-LD (`PaintingContractor`) with Franklin Lakes address, geo, areaServed, Instagram sameAs
 - Open Graph / Twitter card metadata
 - `/sitemap.xml` and `/robots.txt`
 

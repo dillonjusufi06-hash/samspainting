@@ -237,6 +237,6 @@ export function localBusinessJsonLd() {
         },
       })),
     },
-    sameAs: [contactInfo.facebookUrl, contactInfo.instagramUrl],
+    sameAs: [contactInfo.instagramUrl],
   };
 }

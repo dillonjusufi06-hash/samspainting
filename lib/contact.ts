@@ -15,7 +15,6 @@ export const contactInfo = {
   get mapsUrl() {
     return `https://www.google.com/maps?q=${encodeURIComponent(this.fullAddress)}`;
   },
-  facebookUrl: "https://www.facebook.com/samthepainter",
   instagramUrl: "https://www.instagram.com/samspainting",
   instagramHandle: "@samspainting",
   hours: "Open 24 hours",
