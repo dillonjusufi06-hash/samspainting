@@ -88,7 +88,7 @@ export function HomePage() {
     },
     {
       question: "Are you licensed and insured in New Jersey?",
-      answer: "Yes. Sam's Painting LLC is licensed, bonded, and fully insured in New Jersey (HIC #13VH03695800)."
+      answer: "Yes. Sam's Painting is licensed, bonded, and fully insured in New Jersey (HIC #13VH03695800)."
     },
     {
       question: "Do you paint kitchen cabinets?",

@@ -6,9 +6,9 @@
 
 ## Business Overview
 
-- **Business name:** Sam's Painting LLC
+- **Business name:** Sam's Painting
 - **Industry:** Residential & light commercial painting contractor
-- **Primary market:** North Jersey — Wyckoff hub; affluent Bergen, Morris, and Essex county communities
+- **Primary market:** North Jersey — Franklin Lakes hub; affluent Bergen, Morris, and Essex county communities
 - **Live URL:** https://www.samspaintingnj.com/
 - **Tech:** Next.js 15 (React), static service pages, client-side FAQ/testimonials/form embeds
 - **Lead capture:** Phone, Fillout form embed (popup + contact page inline), floating CTAs site-wide
@@ -17,13 +17,13 @@
 
 ## NAP (Name, Address, Phone) — Footer Contact Block
 
-- **Name:** Sam's Painting LLC
+- **Name:** Sam's Painting
 - **Address:** 574 Commerce St #2023, Franklin Lakes, NJ 07417
 - **Phone:** (201) 232-5978
 - **License:** NJ HIC #13VH03695800
-- **Footer tagline (logo column):** "Based in Wyckoff, serving discerning homeowners across Bergen, Morris, and Essex counties."
+- **Footer tagline (logo column):** "Based in Franklin Lakes, serving discerning homeowners across Bergen, Morris, and Essex counties."
 
-**NAP consistency note:** Wyckoff is the primary hub. Copy targets North Jersey counties; "statewide" language has been removed from contact and homepage.
+**NAP consistency note:** Franklin Lakes is the primary hub. Copy targets North Jersey counties; "statewide" language has been removed from contact and homepage.
 
 ---
 
@@ -51,12 +51,12 @@
 ### Global (layout fallback)
 
 - **Title:** Sam's Painting | House Painting in North Jersey
-- **Description:** Interior painting, exterior painting, cabinet painting, deck staining, epoxy floors, and commercial painting in Wyckoff and North Jersey. Free estimates. Call (201) 232-5978.
+- **Description:** Interior painting, exterior painting, cabinet painting, deck staining, epoxy floors, and commercial painting in Franklin Lakes and Bergen County. Free estimates. Call (201) 232-5978.
 
 ### Homepage (`/`)
 
 - **Title:** Professional House Painters in North Jersey | Sam's Painting
-- **Description:** Premium interior & exterior painting in Wyckoff, Franklin Lakes, Ridgewood, and North Jersey's finest neighborhoods. Fully licensed & insured. Free estimates.
+- **Description:** Premium interior & exterior painting in Franklin Lakes, Ridgewood, and North Jersey's finest neighborhoods. Fully licensed & insured. Free estimates.
 
 ### Contact (`/contact`)
 
@@ -84,7 +84,7 @@ Each service page has a unique meta description and H1 (no `#1 Top Rated` templa
 
 **Hero badge:** Licensed, Bonded & Insured · HIC #13VH03695800
 
-**Hero tagline:** Licensed, bonded, and insured painters based in Wyckoff. Careful prep, premium paints, and immaculate job sites across Bergen, Morris, and Essex County's finest neighborhoods.
+**Hero tagline:** Licensed, bonded, and insured painters based in Franklin Lakes. Careful prep, premium paints, and immaculate job sites across Bergen, Morris, and Essex County's finest neighborhoods.
 
 **Hero CTA:** Call for Free Estimate — (201) 232-5978
 
@@ -127,7 +127,7 @@ Each service page has a unique meta description and H1 (no `#1 Top Rated` templa
 
 **Listed:** Phone, Office, Hours, Licensed & Insured (NJ HIC #13VH03695800)
 
-**Map:** 637 Wyckoff Ave, Wyckoff, NJ 07481
+**Map:** 574 Commerce St #2023, Franklin Lakes, NJ 07417
 
 **Form:** Fillout embed (standard inline)
 
@@ -173,7 +173,7 @@ Each service page has a unique meta description and H1 (no `#1 Top Rated` templa
 
 **Tone:** Direct, homeowner-friendly, professional, local contractor
 
-**Primary keywords:** North Jersey, Wyckoff, interior painting, exterior painting, cabinet painting, deck staining, epoxy floors, commercial painting, free estimates, licensed insured
+**Primary keywords:** North Jersey, Franklin Lakes, interior painting, exterior painting, cabinet painting, deck staining, epoxy floors, commercial painting, free estimates, licensed insured
 
 **Secondary/local terms:** Bergen County, Franklin Lakes, Saddle River, Ridgewood, Short Hills, prep, trim, cabinets
 
@@ -181,7 +181,7 @@ Each service page has a unique meta description and H1 (no `#1 Top Rated` templa
 
 ## Copyright Footer
 
-© 2026 Sam's Painting LLC. Licensed, Bonded & Fully Insured. NJ HIC #13VH03695800
+© 2026 Sam's Painting. Licensed, Bonded & Fully Insured. NJ HIC #13VH03695800
 
 ---
 

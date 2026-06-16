@@ -1,5 +1,5 @@
 export const contactInfo = {
-  businessName: "Sam's Painting LLC",
+  businessName: "Sam's Painting",
   phone: "(201) 232-5978",
   phoneHref: "tel:2012325978",
   address: {
