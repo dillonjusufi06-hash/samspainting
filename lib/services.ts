@@ -106,7 +106,7 @@ export const services: Service[] = [
     title: "Cabinet Painting",
     description:
       "Cabinet painting for kitchens, bathrooms, and built-ins — a fresh look without replacing cabinets.",
-    image: "https://i.imgur.com/Vyuh1We.jpeg",
+    image: "/gallery/project-16.jpeg",
     tagline:
       "Give your kitchen, bathroom, or built-ins a fresh new look without replacing your cabinets. We prep, paint, and finish cabinets carefully so they look clean, smooth, and updated.",
     subservices: [

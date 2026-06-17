@@ -6,9 +6,6 @@ export const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.samspain
 
 export const siteConfig = {
   name: "Sam's Painting",
-  legalName: contactInfo.businessName,
-  defaultTitle: "Sam's Painting",
-  locationLabel: "North Jersey",
   ogImage: "/banner.jpg",
   favicon: "/favicon.svg",
 };
@@ -20,82 +17,45 @@ export const heroHeadlines = {
   contact: "#1 Rated Painting Contractor",
 } as const;
 
-export const serviceArea = {
-  hub: "Franklin Lakes",
-  counties: ["Bergen County", "Morris County", "Essex County"],
-  towns: [
-    "Wyckoff",
-    "Franklin Lakes",
-    "Saddle River",
-    "Alpine",
-    "Ridgewood",
-    "Ramsey",
-    "Allendale",
-    "Glen Rock",
-    "Mahwah",
-    "Tenafly",
-    "Englewood Cliffs",
-    "Ho-Ho-Kus",
-    "Summit",
-    "Short Hills",
-    "Millburn",
-    "Montclair",
-    "Chatham",
-    "Mendham",
-  ],
-};
-
 export const serviceSeo: Record<
   string,
-  { title: string; description: string; headline: string; tagline: string }
+  { title: string; description: string; headline: string }
 > = {
   "interior-painting": {
     title: "Interior Painting Services | North Jersey Home Painters",
     description:
       "Flawless walls, trim, and ceilings. Dust-free prep and premium paints for your North Jersey home. Call for a free design & color estimate.",
     headline: "Interior Painting Services You Can Trust",
-    tagline:
-      "Make the inside of your home feel fresh again with clean prep, smooth finishes, and quality paint. From walls and ceilings to trim, doors, bedrooms, kitchens, and living rooms, we handle the details so your space looks sharp.",
   },
   "exterior-painting": {
     title: "Exterior House Painting & Prep Experts | North Jersey",
     description:
       "Weather-resistant exterior painting engineered for NJ climates. Power washing, thorough scraping, and long-lasting finishes.",
     headline: "Exterior Painting Services You Can Trust",
-    tagline:
-      "Make your home look new again from the outside with careful prep and weather-ready paint. We paint siding, trim, doors, shutters, and more to help protect your home and give it a clean, fresh look.",
   },
   "commercial-painting": {
     title: "Commercial Painting Contractors | North Jersey Offices",
     description:
       "Office, retail, and light commercial painting. Flexible after-hours scheduling, minimal business disruption, and durable coatings.",
     headline: "Commercial Painting Services You Can Trust",
-    tagline:
-      "Keep your business looking clean, professional, and well cared for with reliable commercial painting. We work on offices, stores, rentals, and small business spaces with neat work and durable finishes.",
   },
   "deck-and-fence-staining": {
     title: "Deck & Fence Staining Services | Bergen & Morris County",
     description:
       "Protect your outdoor wood. Professional power washing, sanding, and premium deep-penetrating staining to withstand NJ winters.",
     headline: "Deck and Fence Staining Services You Can Trust",
-    tagline:
-      "Bring your outdoor wood back to life with clean staining for decks, fences, railings, and more. We help protect wood from weather while giving your outdoor space a richer, cleaner look.",
   },
   "epoxy-floor-coatings": {
     title: "Garage Epoxy Floor Coatings | North Jersey Installation",
     description:
       "Turn your garage into a clean workspace. Heavy-duty, slip-resistant industrial epoxy floors built to resist oil and tire marks.",
     headline: "Epoxy Floor Coating Services You Can Trust",
-    tagline:
-      "Give your garage, basement, shop, or work area a strong, clean floor that looks finished and holds up better over time. Our epoxy floor coatings are made for durable, easy-to-clean spaces.",
   },
   "cabinet-painting": {
     title: "Kitchen Cabinet Painting & Refinishing | North Jersey",
     description:
       "Get a luxury factory-smooth kitchen remodel at a fraction of the cost of replacement. Durable, scratch-resistant cabinet finishes.",
     headline: "Cabinet Painting Services You Can Trust",
-    tagline:
-      "Give your kitchen, bathroom, or built-ins a fresh new look without replacing your cabinets. We prep, paint, and finish cabinets carefully so they look clean, smooth, and updated.",
   },
 };
 
