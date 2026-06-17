@@ -20,7 +20,8 @@ export const services: Service[] = [
       "Fresh paint for walls, ceilings, trim, doors, bedrooms, kitchens, living rooms, and more.",
     image:
       "https://lakeshore-painting.org/wp-content/uploads/2024/03/Default_Realistic_interior_house_with_dark_blue_walls_0-1024x683.jpg",
-    tagline: "Clean, sharp interior paint for every room — walls, trim, and ceilings done right with careful prep.",
+    tagline:
+      "Make the inside of your home feel fresh again with clean prep, smooth finishes, and quality paint. From walls and ceilings to trim, doors, bedrooms, kitchens, and living rooms, we handle the details so your space looks sharp.",
     subservices: [
       { title: "Wall & Ceiling Painting", description: "Fresh coats for walls and ceilings in every room of your home." },
       { title: "Trim & Door Painting", description: "Sharp lines on baseboards, casings, doors, and molding." },
@@ -36,7 +37,8 @@ export const services: Service[] = [
     description:
       "Exterior house painting, siding painting, trim painting, power washing, and outdoor touch-ups.",
     image: "https://www.solispainting.com/img/new-providence-painters.jpg",
-    tagline: "Make your home look new again from the outside with expert prep and weather-ready paint.",
+    tagline:
+      "Make your home look new again from the outside with careful prep and weather-ready paint. We paint siding, trim, doors, shutters, and more to help protect your home and give it a clean, fresh look.",
     subservices: [
       { title: "Siding Painting", description: "Even, long-lasting color on wood, vinyl, and fiber cement siding." },
       { title: "Trim & Shutter Painting", description: "Crisp trim, shutters, and fascia that frame your home." },
@@ -53,7 +55,8 @@ export const services: Service[] = [
       "Clean, durable painting for offices, stores, rentals, and small business spaces.",
     image:
       "https://pizzazzpainting.com/wp-content/uploads/2022/01/shutterstock_58077985-scaled.jpg",
-    tagline: "Professional painting for offices and stores — clean work, flexible scheduling, durable finishes.",
+    tagline:
+      "Keep your business looking clean, professional, and well cared for with reliable commercial painting. We work on offices, stores, rentals, and small business spaces with neat work and durable finishes.",
     subservices: [
       { title: "Office Painting", description: "Professional finishes for offices, conference rooms, and workspaces." },
       { title: "Retail & Store Painting", description: "Clean, durable paint for storefronts and customer-facing spaces." },
@@ -69,7 +72,8 @@ export const services: Service[] = [
     description:
       "Wood staining that helps protect decks, fences, railings, and outdoor wood from weather.",
     image: "https://www.elkhartlandscape.com/uploads/4/3/7/6/43764133/8788322_orig.jpg",
-    tagline: "Protect your decks and fences with rich, even stain that stands up to NJ weather.",
+    tagline:
+      "Bring your outdoor wood back to life with clean staining for decks, fences, railings, and more. We help protect wood from weather while giving your outdoor space a richer, cleaner look.",
     subservices: [
       { title: "Deck Staining", description: "Rich, even stain that protects and refreshes your deck." },
       { title: "Fence Staining", description: "Fence staining for privacy fences, pickets, and perimeter wood." },
@@ -86,7 +90,8 @@ export const services: Service[] = [
       "Strong epoxy floors for garages, basements, shops, work areas, and clean finished spaces.",
     image:
       "https://certapro.com/wp-content/uploads/cache/remote/pub-9fc1f065f07e441b8f35365c774f09ae-r2-dev/279536609.jpg",
-    tagline: "Tough, easy-to-clean epoxy floors for garages and workspaces that look sharp for years.",
+    tagline:
+      "Give your garage, basement, shop, or work area a strong, clean floor that looks finished and holds up better over time. Our epoxy floor coatings are made for durable, easy-to-clean spaces.",
     subservices: [
       { title: "Garage Floor Epoxy", description: "Durable, easy-to-clean epoxy for residential garages." },
       { title: "Basement Floor Epoxy", description: "Smooth coated floors for basements and utility spaces." },
@@ -102,7 +107,8 @@ export const services: Service[] = [
     description:
       "Cabinet painting for kitchens, bathrooms, and built-ins — a fresh look without replacing cabinets.",
     image: "https://i.imgur.com/Vyuh1We.jpeg",
-    tagline: "A fresh kitchen look without replacing cabinets — smooth, factory-quality finishes.",
+    tagline:
+      "Give your kitchen, bathroom, or built-ins a fresh new look without replacing your cabinets. We prep, paint, and finish cabinets carefully so they look clean, smooth, and updated.",
     subservices: [
       { title: "Kitchen Cabinet Painting", description: "A full kitchen refresh without replacing your cabinets." },
       { title: "Bathroom Vanity Painting", description: "Smooth finishes for bathroom vanities and storage." },

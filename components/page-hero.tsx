@@ -66,9 +66,9 @@ export function PageHero({
           )}
         </h1>
 
-        <p className="text-base sm:text-lg leading-relaxed text-white/90 max-w-xl mx-auto font-semibold">
+        <h2 className="text-base sm:text-lg leading-relaxed text-white/90 max-w-2xl mx-auto font-semibold">
           {tagline}
-        </p>
+        </h2>
 
         {showPhoneCta && (
           <a

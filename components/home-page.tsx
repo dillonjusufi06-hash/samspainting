@@ -14,6 +14,7 @@ import { TestimonialsSection } from "@/components/testimonials-section";
 import { ServiceCard } from "@/components/service-card";
 import { ContactFormSection } from "@/components/contact-form-section";
 import { services } from "@/lib/services";
+import { heroHeadlines } from "@/lib/seo";
 import { testimonials } from "@/lib/testimonials";
 
 interface PastProject {
@@ -135,8 +136,8 @@ export function HomePage() {
           id="hero"
           imageSrc="/banner.jpg"
           imageAlt="Sam's Painting"
-          headline="Professional House Painters"
-          tagline="Licensed, bonded, and insured painters based in Franklin Lakes. Careful prep, premium paints, and immaculate job sites across Bergen, Morris, and Essex County's finest neighborhoods."
+          headline={heroHeadlines.home}
+          tagline={heroHeadlines.homeTagline}
           showRating
           ratingNote="Based on local customer reviews"
         />

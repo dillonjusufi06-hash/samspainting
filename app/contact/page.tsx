@@ -5,7 +5,7 @@ import { SiteFooter } from "@/components/site-footer";
 import { PageHero } from "@/components/page-hero";
 import { ContactFormBlock } from "@/components/contact-form-section";
 import { contactInfo } from "@/lib/contact";
-import { buildPageMetadata, contactMetadata } from "@/lib/seo";
+import { buildPageMetadata, contactMetadata, heroHeadlines } from "@/lib/seo";
 
 export const metadata: Metadata = buildPageMetadata({
   title: contactMetadata.title as string,
@@ -22,9 +22,9 @@ export default function ContactPage() {
         <PageHero
           imageSrc="/banner.jpg"
           imageAlt="Contact Sam's Painting"
-          headline="Contact Us"
-          tagline="Call or send a message below."
-          showLocation={false}
+          headline={heroHeadlines.contact}
+          tagline="Call or send a message below for a free, no-pressure estimate from North Jersey's most trusted painting crew."
+          showLocation
           showPhoneCta={false}
         />
 

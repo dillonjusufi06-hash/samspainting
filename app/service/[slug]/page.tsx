@@ -57,6 +57,7 @@ export default async function ServicePage({ params }: ServicePageProps) {
 
   const seo = serviceSeo[slug];
   const heroHeadline = seo?.headline ?? service.title;
+  const heroTagline = seo?.tagline ?? service.tagline;
 
   return (
     <div className="min-h-screen bg-neutral-50 text-neutral-900 flex flex-col font-sans">
@@ -68,7 +69,8 @@ export default async function ServicePage({ params }: ServicePageProps) {
           imageSrc={service.image}
           imageAlt={service.title}
           headline={heroHeadline}
-          tagline={service.tagline}
+          tagline={heroTagline}
+          locationLabel="New Jersey"
         />
 
         <section className="py-6 overflow-hidden relative z-20 bg-white">
