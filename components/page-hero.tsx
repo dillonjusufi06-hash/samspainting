@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Phone, Shield, Star } from "lucide-react";
-import { trustBadge } from "@/lib/contact";
+import { contactInfo, trustBadge } from "@/lib/contact";
 
 interface PageHeroProps {
   imageSrc: string;
@@ -72,11 +72,11 @@ export function PageHero({
 
         {showPhoneCta && (
           <a
-            href="tel:2012325978"
+            href={contactInfo.phoneHref}
             className="inline-flex items-center gap-2.5 px-4 py-2.5 sm:px-5 sm:py-3 bg-black/60 border border-white/20 rounded-full backdrop-blur-sm shadow-lg text-xs font-bold tracking-wider text-white hover:bg-black/75 hover:border-white/30 transition-all active:scale-[0.98]"
           >
             <Phone size={13} className="stroke-[2.5] text-accent-400" />
-            <span>Call for Free Estimate — (201) 232-5978</span>
+            <span>Call for Free Estimate — {contactInfo.phone}</span>
           </a>
         )}
 

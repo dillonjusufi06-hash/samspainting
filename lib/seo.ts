@@ -68,7 +68,7 @@ export const homeMetadata: Metadata = {
 export const contactMetadata: Metadata = {
   title: "Request a Free Painting Estimate | Sam's Painting NJ",
   description:
-    "Ready to transform your space? Call (201) 232-5978 or message us online for a free, transparent estimate in North Jersey.",
+    "Ready to transform your space? Call (201) 903-2872 or message us online for a free, transparent estimate in North Jersey.",
 };
 
 export function buildPageMetadata({
@@ -148,7 +148,7 @@ export function serviceJsonLd(slug: string) {
       "@id": `${siteUrl}/#localbusiness`,
       name: contactInfo.businessName,
       url: siteUrl,
-      telephone: "+12012325978",
+      telephone: "+12019032872",
     },
     areaServed: areaServedSchema,
     offers: {
@@ -169,7 +169,7 @@ export function localBusinessJsonLd() {
     image: `${siteUrl}${siteConfig.ogImage}`,
     "@id": `${siteUrl}/#localbusiness`,
     url: siteUrl,
-    telephone: "+12012325978",
+    telephone: "+12019032872",
     priceRange: "$$",
     aggregateRating: {
       "@type": "AggregateRating",

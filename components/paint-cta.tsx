@@ -1,4 +1,5 @@
 import { Phone } from "lucide-react";
+import { contactInfo } from "@/lib/contact";
 
 export function PaintCTA() {
   return (
@@ -19,11 +20,11 @@ export function PaintCTA() {
         </div>
 
         <a
-          href="tel:2012325978"
+          href={contactInfo.phoneHref}
           className="bg-accent-500 hover:bg-accent-600 active:bg-accent-700 text-white font-black text-xs tracking-wider py-4 px-8 rounded-full shadow-lg hover:shadow-accent-500/20 active:scale-95 transition-all text-center inline-flex items-center justify-center gap-2 shrink-0"
         >
           <Phone size={13} className="stroke-[2.5]" />
-          <span>Call Now: (201) 232-5978</span>
+          <span>Call Now: {contactInfo.phone}</span>
         </a>
       </div>
     </section>
