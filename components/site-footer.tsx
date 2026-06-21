@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Instagram } from "lucide-react";
+import { Facebook, Instagram } from "lucide-react";
 import { services } from "@/lib/services";
 import { contactInfo } from "@/lib/contact";
 import { SiteLogo } from "./site-logo";
@@ -25,6 +25,15 @@ export function SiteFooter() {
                 className="flex h-9 w-9 items-center justify-center rounded-full border border-neutral-800 text-neutral-400 hover:text-accent-300 hover:border-neutral-700 transition-colors"
               >
                 <Instagram size={16} className="stroke-[2.5]" />
+              </a>
+              <a
+                href={contactInfo.facebookUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Sam's Painting on Facebook"
+                className="flex h-9 w-9 items-center justify-center rounded-full border border-neutral-800 text-neutral-400 hover:text-accent-300 hover:border-neutral-700 transition-colors"
+              >
+                <Facebook size={16} className="stroke-[2.5]" />
               </a>
             </div>
           </div>
@@ -102,6 +111,16 @@ export function SiteFooter() {
                   className="hover:text-accent-300 transition-colors"
                 >
                   {contactInfo.instagramHandle}
+                </a>
+              </p>
+              <p>
+                <a
+                  href={contactInfo.facebookUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-accent-300 transition-colors"
+                >
+                  Facebook
                 </a>
               </p>
             </address>

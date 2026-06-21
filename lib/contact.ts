@@ -16,6 +16,7 @@ export const contactInfo = {
   },
   instagramUrl: "https://www.instagram.com/samspainting",
   instagramHandle: "@samspainting",
+  facebookUrl: "https://www.facebook.com/profile.php?id=61591115905072",
   hours: "Open 24 hours",
   license: "NJ HIC #13VH03695800",
 };

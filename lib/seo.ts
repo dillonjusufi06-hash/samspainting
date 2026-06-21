@@ -220,6 +220,6 @@ export function localBusinessJsonLd() {
         },
       })),
     },
-    sameAs: [contactInfo.instagramUrl],
+    sameAs: [contactInfo.instagramUrl, contactInfo.facebookUrl],
   };
 }
